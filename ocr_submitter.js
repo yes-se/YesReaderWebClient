@@ -76,14 +76,22 @@ function OcrSubmitter(formId) {
                     parent.progressBar.hide();
                     parent.previewImg.attr("src", reader.result);
                     parent.previewImg.show();
-
+                    
                     var result = parent.sortProperties(data.result).map(function(property) {
                         return "<tr><td>" + property[0] + "</td><td>" + property[1] + "</td></tr>";
                     }).join("<br>");
 
                     parent.result.html(result);
                 }).catch(function(error) {
-                    parent.displayError(error);
+                    error = JSON.parse(error);
+                    if(error.error != undefined)
+                    {
+                        parent.result.html('<tr><td colspan="2"><div class="alert alert-danger" role="alert" id="demo"><strong>BŁĄD: </strong>' + error.error.details + '</div></td></tr>');
+                        parent.displayError("");
+                    }
+                    else{
+                        parent.displayError(JSON.stringify(error));        
+                    }
                 });
             }).catch(function(error) {
                 parent.displayError(error);

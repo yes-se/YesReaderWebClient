@@ -20,25 +20,28 @@
 <body>
 
 <header class="jumbotron">
-    <h1 class="display-4">YesReader</h1>
+    <h1 class="display-4"><img src="YesReader_logo_300.png" alt="YesReader"\></h1>
     <h2 class="lead">Skaner Tymczasowych Dowodów Rejestracyjnych</h2>
     <hr class="my-4">
     <p>Wykorzystujemy Machine Learning, by uzyskać jak najlepsze rezultaty.</p>
     <p class="lead">
         <a class="btn btn-info btn-lg" href="#demo" role="button">Demo</a>
-        <a class="btn btn-secondary btn-lg" href="#contact" role="button">Kontakt</a>
+        <a class="btn btn-secondary btn-lg" href="https://yesse.eu/wp/?page_id=120" role="button">Kontakt</a>
     </p>
 </header>
 
 <main class="container">
     <div class="row col-xl-10 col-lg-10 col-centered">
         <p>
-            <strong>YesReader</strong> to oprogramowanie do odczytywania danych ze zdjęć Dowodów Miękkich niewyposażonych w kody AZTEC. Dostarczamy także środowisko programistyczne na <strong>aplikacje mobilne</strong> do łatwej integracji z Państwa istniejącymi e-rozwiązaniami.
+            <strong>YesReader</strong> to oprogramowanie do odczytywania danych ze zdjęć Dowodów Miękkich niewyposażonych w kody AZTEC. Dostarczamy środowisko programistyczne na <strong>aplikacje mobilne</strong> do łatwej integracji z Państwa istniejącymi e-rozwiązaniami.
         </p>
-        <p>
-            Wykorzystane <strong>sieci neuronowe</strong> zasilone <strong>tysiącami</strong> danych umożliwiają rozpoznanie tekstu nadrukowanego na Dowody Rejestracyjne (<a href="https://pl.wikipedia.org/wiki/OCR">OCR</a>) z systematycznie poprawianą skutecznością rzędu <strong>94%</strong>.
+	<p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hnZALLe6RgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
+	<p>
+            Wykorzystane <strong>sieci neuronowe</strong> zasilone tysiącami danych umożliwiają rozpoznanie tekstu nadrukowanego na Dowody Rejestracyjne (<a href="https://pl.wikipedia.org/wiki/OCR">OCR</a>) z systematycznie poprawianą skutecznością rzędu <strong>98%</strong>.
         </p>
-        <p>W tym miejscu możesz przetestować nasz produkt. Umieść w wyznaczonym polu zdjęcie przodu, a poniżej tyłu Tymczasowego Dowodu Rejestracyjnego.</p>
+        <p>Skontaktuj się z nami w celu sprawdzenia zoptymaizowanego SDK na platformy mobilne. W tym miejscu możesz przetestować wersję online naszego produktu. Umieść w wyznaczonym polu zdjęcie przodu, a poniżej tyłu Tymczasowego Dowodu Rejestracyjnego.</p>
         <div class="alert alert-danger" role="alert" id="demo">
             <strong>Uwaga:</strong> Wybierz <strong>nieporuszone</strong> zdjęcie. W kadrze powinien być widoczny <strong>wyłącznie cały dokument</strong>.
         </div>
@@ -56,7 +59,7 @@
                         <div>
                             <label class="choose_file">
                                 <input type="file" name="docfile" style="display: none;">
-                                <span>Wybierz plik</span> lub przeciągnij go tutaj
+                                <span>Wybierz plik</span> lub przeciągnij tutaj
                             </label>
                         </div>
                     </div>
@@ -96,7 +99,7 @@
                         <div>
                             <label class="choose_file">
                                 <input type="file" name="docfile" style="display: none;">
-                                <span>Wybierz plik</span> lub przeciągnij go tutaj
+                                <span>Wybierz plik</span> lub przeciągnij tutaj
                             </label>
                         </div>
                     </div>
@@ -143,7 +146,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
 
-<script src="ocr_submitter.min.js"></script>
+<script src="ocr_submitter.min.js?v=3"></script>
 
 <script>
     new OcrSubmitter("left").Run();
